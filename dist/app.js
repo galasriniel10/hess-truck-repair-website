@@ -1,0 +1,3 @@
+document.querySelectorAll('[data-service]').forEach(link=>link.addEventListener('click',()=>{document.getElementById('service').value=link.dataset.service;}));
+document.getElementById('quote-form').addEventListener('submit',event=>{event.preventDefault();const phone=document.getElementById('phone');if(phone.value.replace(/\D/g,'').length<7){phone.setCustomValidity('Please enter a phone number with at least 7 digits.');phone.reportValidity();return;}phone.setCustomValidity('');const status=document.getElementById('form-status');status.hidden=false;status.textContent='This preview has not sent your request. Please call (717) 803-9110 to discuss your repair.';});
+document.getElementById('phone').addEventListener('input',event=>event.target.setCustomValidity(''));
