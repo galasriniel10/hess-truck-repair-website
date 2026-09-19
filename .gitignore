@@ -1,0 +1,17 @@
+# Local source photography and shortcuts
+IMG_*
+*.jpeg.url
+*.jpg.url
+*.png.url
+81083679703__0EC319E7-5985-4212-BF6F-CB51BBB00504.jpeg
+
+# Local preview and packaging helpers
+hess-preview.tar.gz
+package-preview.py
+update-pamphlet.py
+site snapshots/
+
+# Common local files
+.DS_Store
+Thumbs.db
+node_modules/
